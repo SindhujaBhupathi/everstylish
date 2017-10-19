@@ -9,6 +9,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
+
+
 <body>
 <nav id="navbar-red" class="navbar navbar-inverse navbar-static-top" role="navigation">
 <div class="container">

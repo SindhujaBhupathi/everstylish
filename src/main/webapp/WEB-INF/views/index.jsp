@@ -12,6 +12,8 @@
 <title>Insert title here</title>
 </head>
 <jsp:include page="header.jsp"></jsp:include>
+
+
 <%--<%@include=file="header.jsp"%> --%>
 <body>
 <div class="container">
