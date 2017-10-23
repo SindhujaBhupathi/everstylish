@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.everstylish.dao.SupplierDAO;
 import com.everstylish.model.Supplier;
@@ -28,10 +30,10 @@ public class SupplierController {
 	        List<Supplier> listSupplier=supplierDAO.retrieveSupplier();
 	        m.addAttribute("supplierList",listSupplier);
 	         
-	        return "Supplier";
+	        return "redirect:supplier";
 	    }
 	    
-	    @RequestMapping(value="supplier",method=RequestMethod.GET)
+	    @RequestMapping(value="/supplier",method=RequestMethod.GET)
 	    public String showSupplier(Model m)
 	    {
 	        Supplier supplier=new Supplier();
@@ -41,20 +43,17 @@ public class SupplierController {
 	        m.addAttribute("supplierList",listSupplier);
 	        return "Supplier";
 	    }
-	    
 	    @RequestMapping(value="updateSupplier/{supId}",method=RequestMethod.GET)
 	    public String updateSupplier(@PathVariable("supId") int supId,Model m)
-	    {
+	     {
 	        Supplier supplier=supplierDAO.getSupplier(supId);
-	        m.addAttribute(supplier);
+	        m.addAttribute("supplier",supplier);
 	         
 	        List<Supplier> listSupplier=supplierDAO.retrieveSupplier();
 	        m.addAttribute("supplierList",listSupplier);
 	        return "Supplier";
 	    }
-	    
-	   
-	    
+	     
 	    @RequestMapping(value="deleteSupplier/{supId}",method=RequestMethod.GET)
 	    public String deleteSupplier(@PathVariable("supId")int supId,Model m)
 	    {
@@ -62,9 +61,8 @@ public class SupplierController {
 	        supplierDAO.deleteSupplier(supplier);
 	        List<Supplier> listSupplier=supplierDAO.retrieveSupplier();
 	        m.addAttribute("supplierList",listSupplier);
-	         
-	      
-	         
 	        return "Supplier";
+	    }	   
+	  
+			
 	    }
-}

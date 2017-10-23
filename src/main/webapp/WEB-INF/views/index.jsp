@@ -4,20 +4,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<h2>red colour</h2>
+
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
+<h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 <jsp:include page="header.jsp"></jsp:include>
-
-
-<%--<%@include=file="header.jsp"%> --%>
-<body>
+ <body>
 <div class="container">
-  <h2>everstylish</h2>  
+ 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -31,11 +29,11 @@
 		 </div>
  
 		<div class="item">
-		   <img class="img-rounded" class="img-responsive center-block" src="resources/image1.jpg" style="width:100%;">
+		   <img class="img-rounded" class="img-responsive center-block" src="resources/image.jpg" style="width:100%;">
 		</div>
 		
 		<div class="item">
-		   <img class="img-rounded" class="img-responsive center-block" src="resources/image2.jpg" style="width:100%;">
+		   <img class="img-rounded" class="img-responsive center-block" src="resources/image1.jpg" style="width:100%;">
 		</div>
   
 	</div>
@@ -51,5 +49,7 @@
     </a>
 </div>
 </div>
+<jsp:include page="footer.jsp" /> 
 </body>
+
 </html>
