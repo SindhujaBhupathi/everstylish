@@ -2,6 +2,17 @@ package com.everstylish;
 
 import java.util.List;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
@@ -20,8 +31,8 @@ public class SupplierController {
 	 @Autowired
 	    SupplierDAO supplierDAO;
 	  
-	 
-	 
+	
+
 	    @RequestMapping(value="AddSupplier",method=RequestMethod.POST)
 	 public String addSupplier(@ModelAttribute("supplier")Supplier supplier,Model m)
 	    {
@@ -58,7 +69,7 @@ public class SupplierController {
 	    public String deleteSupplier(@PathVariable("supId")int supId,Model m)
 	    {
 	        Supplier supplier=supplierDAO.getSupplier(supId);
-	        supplierDAO.deleteSupplier(supplier);
+	        supplierDAO.deleteSupplier(supId);
 	        List<Supplier> listSupplier=supplierDAO.retrieveSupplier();
 	        m.addAttribute("supplierList",listSupplier);
 	        return "Supplier";
