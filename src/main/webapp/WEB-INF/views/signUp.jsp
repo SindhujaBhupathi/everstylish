@@ -9,8 +9,11 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Sign Up Page</title>
 </head>
+
+<h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
+<jsp:include page="header.jsp"></jsp:include>
 <body>
 
 
@@ -18,24 +21,14 @@
 
 <form:form  commandName="user" method="post" action="${actionUrl }" class="form-horizontal" >
 
-
+<br>
+<br>
 	<div class="form-group">
-		<label for="First Name" class="col-xs-4 control-label">First Name</label>
+		<label for="username" class="col-xs-4 control-label">userName</label>
 		<div class="col-xs-4">
-			<form:input name="id" path="firstName" placeholder="User First Name" class="form-control" />
+			<form:input name="id" path="username" placeholder="username" class="form-control" />
 		</div>
 	</div>
-	
-	
-	
-	
-	<div class="form-group">
-		<label for="First Name" class="col-xs-4 control-label">Last Name</label>
-		<div class="col-xs-4">
-			<form:input name="id" path="lastName" placeholder="User First Name" class="form-control" />
-		</div>
-	</div>
-	
 	
 	
 
@@ -49,14 +42,17 @@
 	<div class="form-group">
 		<label for="code" class="col-xs-4 control-label">Password</label>
 		<div class="col-xs-4">
-			<form:input name="password"  path="password" placeholder="User Password" class="form-control" />
+		<input id="password" class="form-control" type="password" value="123" placeholder="password" />
+		
+		 <!-- 	<form:input name="password"  path="password" id="password" placeholder="User Password" class="form-control" />-->
+	<!-- 	<form:input type="password" name="password" id="password" path="password" maxlength="10" class="form-control" /> -->	
 		</div>
 	</div>
 
 	<div class="form-group">
-		<label for="code" class="col-xs-4 control-label">Phone Number</label>
+		<label for="code" class="col-xs-4 control-label">contact</label>
 		<div class="col-xs-4">
-			<form:input name="phone"  path="phone" placeholder="User Phone" class="form-control" />
+			<form:input name="contact"  path="contact" placeholder="User contact" class="form-control" />
 		</div>
 	</div>
 
@@ -69,7 +65,7 @@
 		
 			
 	
-		<input type="submit" value="Add User" id="btn-add" class="btn btn-primary" >
+		<center><input type="submit" value="Add User" id="btn-add" class="btn btn-primary" ></center>
 	</div>
 	</div>
 </form:form>

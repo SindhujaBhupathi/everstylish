@@ -18,10 +18,10 @@ public class indexcontroller
 @Autowired
 private UserDAO userDAO;
 	
-@RequestMapping("/")
-public String index()
+@RequestMapping(value="/",method=RequestMethod.GET)
+public String showIndex()
 {
-	return "index";
+	return "welcome";
 }
 
 @RequestMapping("/signUp")
@@ -42,7 +42,7 @@ public String createUser(@ModelAttribute("user") User user)
 	user.setRole("ROLE_USER");
 	user.setEnabled(true);
 	userDAO.saveUser(user);
-	return "index";
+	return "welcome";
 }
 
 

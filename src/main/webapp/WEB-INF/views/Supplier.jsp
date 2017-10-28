@@ -15,11 +15,11 @@
 <form:form action="AddSupplier" modelAttribute="supplier">
 <table align="center" cellspacing="2">
 	<tr>
-		<td colspan="2"><center>Supplier Module</center></td>
+		<td colspan="2">Supplier Module</td>
 	</tr>
 	<tr>
-		<td>Supplier ID</td>
-		<!--<td><input type="text" name="supId"/></td>-->
+		<td>Supplier Id</td>
+		<!-- <td><input type="text" name="supId"/></td> -->
 		<td><form:input path="supId"/></td>
 	</tr>
 	<tr>
@@ -34,6 +34,7 @@
 	</tr>
 	<tr>
 		<td colspan="2">
+		<br>
 			<center><input type="submit" value="Insert"/></center>
 		</td>
 	</tr>
@@ -42,7 +43,7 @@
 
 <table cell spacing="2" align="center">
 <tr bgcolor="blue">
-<td>Supplier ID</td>
+<td>Supplier Id</td>
 <td>Supplier Name</td>
 <td>Supplier Desc</td>
 <td>Operation</td>
