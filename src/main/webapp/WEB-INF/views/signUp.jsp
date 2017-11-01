@@ -16,6 +16,7 @@
 <jsp:include page="header.jsp"></jsp:include>
 <body>
 
+<br>
 
 <c:url var="actionUrl" value="saveUser" />
 
@@ -42,7 +43,7 @@
 	<div class="form-group">
 		<label for="code" class="col-xs-4 control-label">Password</label>
 		<div class="col-xs-4">
-		<input id="password" class="form-control" type="password" value="123" placeholder="password" />
+		<input id="password" class="form-control" type="password"  placeholder="password" />
 		
 		 <!-- 	<form:input name="password"  path="password" id="password" placeholder="User Password" class="form-control" />-->
 	<!-- 	<form:input type="password" name="password" id="password" path="password" maxlength="10" class="form-control" /> -->	

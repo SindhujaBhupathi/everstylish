@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.everstylish.dao.ProductDAO;
 import com.everstylish.dao.UserDAO;
 import com.everstylish.model.User;
 
@@ -17,12 +18,21 @@ public class indexcontroller
 
 @Autowired
 private UserDAO userDAO;
+
+@Autowired
+ProductDAO productDAO;
 	
+
+
 @RequestMapping(value="/",method=RequestMethod.GET)
-public String showIndex()
+public String showIndex(Model model)
 {
+	model.addAttribute("pList",productDAO.retrieveProduct());
 	return "welcome";
 }
+
+
+
 
 @RequestMapping("/signUp")
 public String goToRegisterPage(@ModelAttribute("user") User user,Model model)

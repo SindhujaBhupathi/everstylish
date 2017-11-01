@@ -1,6 +1,7 @@
 com\everstylish\ImageController.class
+com\everstylish\indexcontroller.class
 com\everstylish\HomeController.class
 com\everstylish\CategoryController.class
 com\everstylish\SupplierController.class
-com\everstylish\indexcontroller.class
+com\everstylish\CartController.class
 com\everstylish\ProductController.class

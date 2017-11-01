@@ -37,6 +37,8 @@ public class ProductController
 	@Autowired
 	SupplierDAO supplierDao;
 	
+	
+	
 	@RequestMapping(value="product",method=RequestMethod.GET)
 	public String showProduct(@ModelAttribute("product") Product product,BindingResult result,Model m)
 	{
@@ -48,6 +50,9 @@ public class ProductController
 		
 		return "Product";
 	}
+	
+	
+	
 	
 public LinkedHashMap<Integer,String> getCategories()
 	{
@@ -78,6 +83,8 @@ public LinkedHashMap<Integer,String> getCategories()
 		return suppliersList;
 	}
 	
+	
+	
 	public LinkedHashMap<Integer,String> getProducts()
 	{
 		List<Product> listProducts=productDao.retrieveProduct();
@@ -102,12 +109,18 @@ public String addItem(@ModelAttribute("product") Product p,@RequestParam("file")
 		return "redirect:/product";
 		
 	}
+	
+	
+	
 	@RequestMapping(value="updateProduct/{productId}",method=RequestMethod.GET)
 	public String editProduct(@PathVariable("productId") int productId,RedirectAttributes attributes)
 	{
 		attributes.addFlashAttribute("product", this.productDao.getProduct(productId));
 		return "redirect:/product";
 	   }
+	
+	
+	
 	
 	@RequestMapping(value="deleteProduct/{productId}",method=RequestMethod.GET)
 	public String removeProduct(@PathVariable("productId") int productId,RedirectAttributes attributes)

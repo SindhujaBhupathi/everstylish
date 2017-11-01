@@ -6,8 +6,13 @@
 <form  method="post" action="j_spring_security_check" class="form-horizontal" >
 
 	
-	
-
+	<h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
+<jsp:include page="header.jsp"></jsp:include>
+<br>
+<tr>
+		<center><td colspan="2">Login</td></center>
+	</tr>
+	<br>
 	<div class="form-group">
 		<label for="User Email" class="col-xs-4 control-label">Email</label>
 		<div class="col-xs-4">
@@ -31,7 +36,7 @@
 		
 			
 	
-		<input type="submit" value="Login" id="btn-add" class="btn btn-primary" >
+	<center><input type="submit" value="Login" id="btn-add" class="btn btn-primary" ></center>
 	
 	
 

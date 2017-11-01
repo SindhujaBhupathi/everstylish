@@ -34,7 +34,7 @@
 <ul class ="nav navbar-nav">
 
 <li><a href="Home"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
-<li><a href="admin">ADMIN</a></li>
+
 
 
 <li><a href="category">Category</a></li>
@@ -47,8 +47,8 @@
 
 </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  
+      
         
      <li><a href="cart"> <span class="glyphicon glyphicon-shopping-cart"></span> Cart  </a></li>
     </ul>

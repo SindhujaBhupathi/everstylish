@@ -74,8 +74,7 @@ public class HomeController {
 			     if (authority.getAuthority().equals(role)) 
 			     {
 			    	 session.setAttribute("UserLoggedIn", "true");
-			    	//session.setAttribute("cartsize",cartDAO.cartsize((Integer)session.getAttribute("userid")));
-			    	 return "redirect:/";
+			         return "redirect:/";
 			     }
 			     else 
 			     {
