@@ -13,6 +13,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.everstylish.dao.CartDAO;
 import com.everstylish.dao.ProductDAO;
+import com.everstylish.dao.UserDAO;
 import com.everstylish.model.Cart;
 import com.everstylish.model.Product;
 

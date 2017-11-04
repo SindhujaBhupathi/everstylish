@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" session="true"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
@@ -20,9 +20,9 @@
     	margin: 20px;
     }
 </style>
-<%-- <jsp:include page="showProduct.jsp" /> --%> 
 
 </head>
+
 <body>
 <div class="bs-example">
     <nav id="myNavbar" class="navbar navbar-inverse" role="navigation">
@@ -35,17 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">rings</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PROFILE</a></li>
-                    
-                </ul>
-               
-            </div><!-- /.navbar-collapse -->
+                
         </div>
     </nav>
 </div>
@@ -138,7 +128,23 @@
     </div>
 </div>
 </body>
-<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
 <jsp:include page="footer.jsp" /> 
 
 </html>	

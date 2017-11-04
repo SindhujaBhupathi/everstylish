@@ -23,13 +23,17 @@
 <table class="footer">
    
    <footer class="footer">
+   <br>
+   <br>
         <div class="container text-left">
             <small style="color:grey" class="copyright">Copyright &copy 2017 Everstylish.com.All Rights Reserved.</small>
-            <a href="skype"><small style="color:grey" class="fa fa-lg fa-skype pull-right">  </small></a>
-            <a href="google"><small style="color:grey" class="fa fa-lg fa-google-plus pull-right">  </small></a>
-            <a href="linkedin"><small style="color:grey" class="fa fa-lg fa-linkedin pull-right">  </small></a>
-            <a href="twitter"><small style="color:grey" class="fa fa-lg fa-twitter pull-right">  </small></a>
-            <a href="facebook"><small style="color:grey" class="fa fa-lg fa-facebook pull-right">  </small></a>
+            <a href="https://login.skype.com"><small style="color:grey" class="fa fa-lg fa-skype pull-right">  </small></a>
+            <a href="http://www.google.com"><small style="color:grey" class="fa fa-lg fa-google-plus pull-right">  </small></a>
+            <a href="https://www.linkedin.com"><small style="color:grey" class="fa fa-lg fa-linkedin pull-right">  </small></a>
+            <a href="https://twitter.com/login?lang=en"><small style="color:grey" class="fa fa-lg fa-twitter pull-right">  </small></a>
+            <a href="https://www.facebook.com"><small style="color:grey" class="fa fa-lg fa-facebook pull-right">  </small></a>
+            <br>
+            <br>
         </div><!--End container-->
     </footer><!--End footer 2-->
    

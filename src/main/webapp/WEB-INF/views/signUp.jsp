@@ -39,8 +39,15 @@
 			<form:input name="id" path="email" placeholder="User Name" class="form-control" />
 		</div>
 	</div>
+	
+	 <div class="form-group">
+		<label for="code" class="col-xs-4 control-label">Password</label>
+		<div class="col-xs-4">
+			<form:input type="password" name="password"  path="password" placeholder="User Password" class="form-control" />
+		</div>
+	</div>
 
-	<div class="form-group">
+	<!-- <div class="form-group">
 		<label for="code" class="col-xs-4 control-label">Password</label>
 		<div class="col-xs-4">
 		<input id="password" class="form-control" type="password"  placeholder="password" />
@@ -48,7 +55,7 @@
 		 <!-- 	<form:input name="password"  path="password" id="password" placeholder="User Password" class="form-control" />-->
 	<!-- 	<form:input type="password" name="password" id="password" path="password" maxlength="10" class="form-control" /> -->	
 		</div>
-	</div>
+	</div> -->
 
 	<div class="form-group">
 		<label for="code" class="col-xs-4 control-label">contact</label>

@@ -20,8 +20,8 @@
 		<property name="suffix" value=".jsp" />
 	 </bean>
 	
+ <mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 
-<mvc:resources mapping="/resources/**" location="/resources/" />
 
  <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- max upload size in bytes -->

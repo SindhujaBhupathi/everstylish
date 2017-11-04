@@ -17,11 +17,11 @@
 		</head>
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 	<body>
-	  
-	  	<nav id ="navbar-red" class="navbar-inverse"role="navigation">
+	  <body background="${pageContext.request.contextPath}/resources/images/">
+	  	<nav id ="navbar-red" class="navbar navbar-inverse"role="navigation">
 			
 			<div class="container-fluid">
-				<ul="nav navbar-nav">
+				<ul class="nav navbar-nav">
 					<button type="button"class="navbar-toggle collapsed datatoggle="collapse"data target="bs-example-nav">
 						<span class="sr-only">toggle navigation</span>
 						<span class="icon_bar"></span>
@@ -31,21 +31,23 @@
 		
 						<span class="icon_bar"></span>
 					</button>
+					
 				</ul>
 				
 			</div>
 		
 			<div class="collapse navbar-collapse"id=bs-example-nav>
-		
+				<ul class="nav navbar-nav">
+					<li><a href="${pageContext.request.contextPath}/">HOME</a></li>
+				</ul>
 			
 				<ul class="nav navbar-nav navbar-right">
-					
-					  <sec:authorize access="!isAuthenticated()">
+					<sec:authorize access="!isAuthenticated()">
                     <li role="presentation"><a href="login">Login </a></li>
                     <li role="presentation"><a href="signUp">signUp </a></li>
                      </sec:authorize>
                     <sec:authorize access="isAuthenticated()">
-                 <li><a href="<c:url value="j_spring_security_logout"/>">logout</a></li>
+                 <li><a href="<c:url value="j_spring_security_logout"/>">Logout</a></li>
                  <li role="presentation"><a href="cart">cart</a></li>
                   </sec:authorize>
 	
@@ -54,6 +56,41 @@
 	  	</nav>
 	 <!--  	======================== -->
 	  	
+	  <div class="container">
+ 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+	<div class="carousel-inner">
+		  <div class="item active">
+		   <img class="img-rounded" class="img-responsive center-block" src="resources/image0.jpg" style="width:100%;">
+		 </div>
+ 
+		<div class="item">
+		   <img class="img-rounded" class="img-responsive center-block" src="resources/image.jpg" style="width:100%;">
+		</div>
+		
+		<div class="item">
+		   <img class="img-rounded" class="img-responsive center-block" src="resources/image1.jpg" style="width:100%;">
+		</div>
+  
+	</div>
+  <!-- Left and Right controls-->
+  
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
 	  	
 	  	
 	<c:forEach items="${pList}" var="product">
@@ -109,6 +146,6 @@
 	  
 	   <!--  	======================== -->
 		
-	  	
+	  	<jsp:include page="footer.jsp"></jsp:include>
 	</body>
 </html>

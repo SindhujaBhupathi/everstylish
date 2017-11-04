@@ -18,11 +18,6 @@ import com.everstylish.dao.UserDAO;
 import com.everstylish.model.Product;
 import com.everstylish.model.User;
 
-//import com.everstylish.dao.CategoryDAO;
-//import com.everstylish.dao.SupplierDAO;
-//import com.everstylish.dao.UserDAO;
-//import com.everstylish.model.User;
-
 @Controller
 public class HomeController {
 	
