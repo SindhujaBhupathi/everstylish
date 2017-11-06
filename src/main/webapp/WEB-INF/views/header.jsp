@@ -41,21 +41,21 @@
 <li><a href="category">Category</a></li>
 <li><a href="supplier">Supplier</a></li>
 <li><a href="product">Product</a></li>
-</sec:authorize>
-<li>
-				<sec:authorize access="isAuthenticated()">
-                 <li><a href="<c:url value="j_spring_security_logout"/>">Logout</a></li>
-                  </sec:authorize>
-</li>
+
 
 </ul>
 
 </ul>
     <ul class="nav navbar-nav navbar-right">
   
-      
+      </sec:authorize>
+<li>
+				<sec:authorize access="isAuthenticated()">
+                 <li><a href="<c:url value="j_spring_security_logout"/>">Logout</a></li>
+                  </sec:authorize>
+</li>
         
-     <li><a href="cart"> <span class="glyphicon glyphicon-shopping-cart"></span> Cart  </a></li>
+   <!--    <li><a href="cart"> <span class="glyphicon glyphicon-shopping-cart"></span> Cart  </a></li>-->
     </ul>
   
 

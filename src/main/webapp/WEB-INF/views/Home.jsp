@@ -48,7 +48,7 @@
                     <sec:authorize access="isAuthenticated()">
                     <li>welcome : <sec:authentication property="principal.username" /></li>
                  <li><a href="<c:url value="j_spring_security_logout"/>">logout</a></li>
-                 <li role="presentation"><a href="cart">cart</a></li>
+                 <li role="presentation"><a href="cart">cart</a></li> 
                   </sec:authorize>
 	
 				</ul>

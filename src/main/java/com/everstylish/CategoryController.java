@@ -24,9 +24,18 @@ public class CategoryController {
 	@Autowired
 	CategoryDAO categoryDAO;
 	  
-	 
+	  @RequestMapping(value="AddCategory",method=RequestMethod.POST)
+		 public String addCategory(@ModelAttribute("category")Category category,Model m)
+		    {
+
+		    	
+		    	categoryDAO.addCategory(category);
+		        
+		        return "redirect:/category";
+		    }
+		    
 	
-	    @RequestMapping(value="AddCategory",method=RequestMethod.POST)
+	 /*   @RequestMapping(value="AddCategory",method=RequestMethod.POST)
 	 public String addCategory(@ModelAttribute("category")Category category,Model m)
 	    {
 
@@ -35,7 +44,7 @@ public class CategoryController {
 	        
 	        return "redirect:/category";
 	    }
-	    
+	    */
 	    
 		@RequestMapping(value="category",method=RequestMethod.GET)
 	    public String showCategory(@ModelAttribute("category")Category category,Model m)

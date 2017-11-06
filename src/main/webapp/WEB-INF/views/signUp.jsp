@@ -28,6 +28,8 @@
 		<label for="username" class="col-xs-4 control-label">userName</label>
 		<div class="col-xs-4">
 			<form:input name="id" path="username" placeholder="username" class="form-control" />
+										<form:errors path="username" cssClass="error"/>                   
+			
 		</div>
 	</div>
 	
@@ -37,6 +39,7 @@
 		<label for="Supplier Name" class="col-xs-4 control-label">Email</label>
 		<div class="col-xs-4">
 			<form:input name="id" path="email" placeholder="User Name" class="form-control" />
+			<form:errors path="email" cssClass="error"/> 
 		</div>
 	</div>
 	
@@ -44,6 +47,8 @@
 		<label for="code" class="col-xs-4 control-label">Password</label>
 		<div class="col-xs-4">
 			<form:input type="password" name="password"  path="password" placeholder="User Password" class="form-control" />
+			<form:errors path="password" cssClass="error"/> 
+			
 		</div>
 	</div>
 
@@ -61,6 +66,7 @@
 		<label for="code" class="col-xs-4 control-label">contact</label>
 		<div class="col-xs-4">
 			<form:input name="contact"  path="contact" placeholder="User contact" class="form-control" />
+				<form:errors path="contact" cssClass="error"/> 
 		</div>
 	</div>
 
