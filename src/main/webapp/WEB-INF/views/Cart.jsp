@@ -64,7 +64,7 @@
                          <a class="thumbnail pull-left" href="#"> <img src="/everstylish/myImage/imageDisplay?id=${cart.productId}" style="height:50px;height: 50px" > </a> 
                             <div class="media-body">
                                 <h4 class="media-heading"><a href="#">${cart.productName}</a></h4>
-                                <h5 class="media-heading"> by <a href="#">Brand name</a></h5>
+                              <!--  <h5 class="media-heading"> by <a href="#">Brand name</a></h5>-->
                               <!--<span>Status: </span><span class="text-success"><strong>In Stock</strong></span>-->
                             </div>
                         </div></td>

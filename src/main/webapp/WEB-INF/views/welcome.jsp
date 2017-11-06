@@ -47,6 +47,7 @@
                     <li role="presentation"><a href="signUp">signUp </a></li>
                      </sec:authorize>
                     <sec:authorize access="isAuthenticated()">
+                    <li role="presentation">welcome : <sec:authentication property="principal.username" /> </li>
                  <li><a href="<c:url value="j_spring_security_logout"/>">Logout</a></li>
                  <li role="presentation"><a href="cart">cart</a></li>
                   </sec:authorize>
@@ -71,7 +72,7 @@
 		 </div>
  
 		<div class="item">
-		   <img class="img-rounded" class="img-responsive center-block" src="resources/image.jpg" style="width:100%;">
+		   <img class="img-rounded" class="img-responsive center-block" src="resources/r6.jpg" style="width:100%;">
 		</div>
 		
 		<div class="item">

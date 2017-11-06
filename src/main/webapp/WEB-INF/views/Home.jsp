@@ -7,22 +7,23 @@
 <html>
 
 		<head>
-  			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+  			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
   			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   			
   			<title>everstylish</title>
+  			
 		</head>
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 	<body>
 	  
-	  	<nav id ="navbar-red" class="navbar-inverse"role="navigation">
+	  	<nav id ="navbar-red" class="nav navbar-inverse" role="navigation">
 			
 			<div class="container-fluid">
 				<ul="nav navbar-nav">
-					<button type="button"class="navbar-toggle collapsed datatoggle="collapse"data target="bs-example-nav">
+					<button type="button"class="navbar-toggle collapsed datatoggle="collapse" data target="bs-example-nav">
 						<span class="sr-only">toggle navigation</span>
 						<span class="icon_bar"></span>
 						<span class="icon_bar"></span>
@@ -38,13 +39,14 @@
 			<div class="collapse navbar-collapse"id=bs-example-nav>
 		
 			
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-right">
 					
 					  <sec:authorize access="!isAuthenticated()">
                     <li role="presentation"><a href="login">Login </a></li>
                     <li role="presentation"><a href="signUp">signUp </a></li>
                      </sec:authorize>
                     <sec:authorize access="isAuthenticated()">
+                    <li>welcome : <sec:authentication property="principal.username" /></li>
                  <li><a href="<c:url value="j_spring_security_logout"/>">logout</a></li>
                  <li role="presentation"><a href="cart">cart</a></li>
                   </sec:authorize>

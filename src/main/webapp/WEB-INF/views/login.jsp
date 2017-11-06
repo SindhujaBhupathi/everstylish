@@ -41,7 +41,7 @@
 		<div class="col-xs-4">
 					
 	
-	<input type="submit" value="Login" id="btn-add" class="btn btn-primary" align="center">
+	<center><input type="submit" value="Login" id="btn-add" class="btn btn-primary" align="center"></center>
 	
 	</form>
 

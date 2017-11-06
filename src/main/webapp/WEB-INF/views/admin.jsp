@@ -29,7 +29,7 @@
 		 </div>
  
 		<div class="item">
-		   <img class="img-rounded" class="img-responsive center-block" src="resources/image.jpg" style="width:100%;">
+		   <img class="img-rounded" class="img-responsive center-block" src="resources/r6.jpg" style="width:100%;">
 		</div>
 		
 		<div class="item">
