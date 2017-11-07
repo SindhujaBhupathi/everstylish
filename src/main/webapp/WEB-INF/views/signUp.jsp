@@ -15,7 +15,7 @@
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 <jsp:include page="header.jsp"></jsp:include>
 <body>
-
+<body background="${pageContext.request.contextPath}/resources/bg8.jpg">
 <br>
 
 <c:url var="actionUrl" value="saveUser" />
@@ -51,16 +51,6 @@
 			
 		</div>
 	</div>
-
-	<!-- <div class="form-group">
-		<label for="code" class="col-xs-4 control-label">Password</label>
-		<div class="col-xs-4">
-		<input id="password" class="form-control" type="password"  placeholder="password" />
-		
-		 <!-- 	<form:input name="password"  path="password" id="password" placeholder="User Password" class="form-control" />-->
-	<!-- 	<form:input type="password" name="password" id="password" path="password" maxlength="10" class="form-control" /> -->	
-		</div>
-	</div> -->
 
 	<div class="form-group">
 		<label for="code" class="col-xs-4 control-label">contact</label>

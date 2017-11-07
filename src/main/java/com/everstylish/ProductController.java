@@ -42,7 +42,7 @@ public class ProductController
 	@RequestMapping(value="product",method=RequestMethod.GET)
 	public String showProduct(@ModelAttribute("product") Product product,BindingResult result,Model m)
 	{
-		//Product product=new Product();
+		
 		m.addAttribute(product);
 		m.addAttribute("productsList",productDao.retrieveProduct());
 		m.addAttribute("categoriesList",getCategories());
@@ -98,6 +98,11 @@ public LinkedHashMap<Integer,String> getCategories()
 		return productsList;
 	}
 	
+	@RequestMapping(value="productsDisplayPage", method = RequestMethod.GET)
+	public String showProductDetailPage(Model m){
+		m.addAttribute("pList", productDao.getAllProducts());
+		return "productsDisplayPage";
+	}
 
 	
 

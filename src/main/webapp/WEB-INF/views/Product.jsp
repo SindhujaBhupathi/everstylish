@@ -6,12 +6,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Product page</title>
+<title>product</title>
 </head>
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 <jsp:include page="header.jsp"></jsp:include>
 <body>
 
+<body background="${pageContext.request.contextPath}/resources/green_background.jpg">
+
+	 
 	<h3>
 		<c:if test="${product.productId==0}">
 		     
@@ -26,7 +29,7 @@
 		<table align="center">
 		
 			<tr>
-				<td colspan="2">Product Detail</td>
+				<td colspan="2"><center>Product Detail</center></td>
 			</tr>	
 			<form:hidden path="productId"/> 
 	
@@ -58,6 +61,8 @@
 				<td><form:input path="price"/></td>
 			</tr>
 	
+	
+
 	
 			<tr>
 				<td>Category</td>
@@ -91,13 +96,15 @@
 	
 			<tr>
 				<td colspan="2">
-						<c:if test="${product.productId==0}">
+				
+				
+				
+					 <c:if test="${product.productId==0}"> 
 		<input type="submit" value="Add Product" id="btn-add" class="btn btn-primary" >
 		
-		</c:if> <c:if test="${product.productId!=0}">
-		
+	 	</c:if> <c:if test="${product.productId!=0}">
 	   <input type="submit" value="updateProduct" id="btn-update" class="btn btn-primary" >
-	  </c:if>
+	  </c:if> 
 				</td>
 			</tr>
 	
@@ -137,4 +144,15 @@
 		</c:forEach></table>
 
 </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<jsp:include page="footer.jsp" />
 </html>

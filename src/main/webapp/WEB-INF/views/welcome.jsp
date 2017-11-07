@@ -17,6 +17,7 @@
 		</head>
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 	<body>
+	
 	  <body background="${pageContext.request.contextPath}/resources/images/">
 	  	<nav id ="navbar-red" class="navbar navbar-inverse"role="navigation">
 			

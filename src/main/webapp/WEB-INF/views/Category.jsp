@@ -11,6 +11,7 @@
 <jsp:include page="header.jsp"></jsp:include>
 <h2></h2>
 <body>
+<body background="${pageContext.request.contextPath}/resources/green_background.jpg">
 <form:form action="AddCategory" modelAttribute="category">
 <table align="center" cellspacing="2">
 	<tr>
@@ -64,4 +65,15 @@
 </table>
 
 </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<jsp:include page="footer.jsp" />
 </html>

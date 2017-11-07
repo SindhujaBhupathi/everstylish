@@ -12,10 +12,11 @@
 <jsp:include page="header.jsp"></jsp:include>
 <h2></h2>
 <body>
+<body background="${pageContext.request.contextPath}/resources/green_background.jpg">
 <form:form action="AddSupplier" modelAttribute="supplier">
 <table align="center" cellspacing="2">
 	<tr>
-		<td colspan="2">Supplier Module</td>
+		<td colspan="2"><center>Supplier Module</center></td>
 	</tr>
 	<tr>
 		<td>Supplier Id</td>
@@ -64,4 +65,13 @@
 </table>
 
 </body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<jsp:include page="footer.jsp" />
 </html>

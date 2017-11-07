@@ -6,6 +6,7 @@
 <head>
 </head>
 <body>
+<body background="${pageContext.request.contextPath}/resources/bg8.jpg">
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 
 <jsp:include page="header.jsp"></jsp:include>
@@ -13,7 +14,7 @@
 <form  method="post" action="j_spring_security_check" class="form-horizontal" >
 
 	
-	
+<!--  -->	
 <br>
 <tr>
 		<center><td colspan="2">Login</td></center>
@@ -23,6 +24,7 @@
 		<label for="User Email" class="col-xs-4 control-label">Email</label>
 		<div class="col-xs-4">
 			<input name="j_username" type="email"  placeholder=" User Email" class="form-control" />
+			<form:errors path="username" cssClass="error"/> 
 		</div>
 	</div>
 
@@ -30,6 +32,7 @@
 		<label for="code" class="col-xs-4 control-label">Password</label>
 		<div class="col-xs-4">
 			<input name="j_password"  type="password" placeholder="User Password" class="form-control" />
+			<form:errors path="password" cssClass="error"/> 
 		</div>
 	</div>
 
@@ -47,7 +50,7 @@
 
 		
 		</div>
-	</div>
+	</div>     
 <br>
 <br>
 <br>

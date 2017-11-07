@@ -24,6 +24,7 @@
 </head>
 
 <body>
+<body background="${pageContext.request.contextPath}/resources/bg3.jpg">
 <div class="bs-example">
     <nav id="myNavbar" class="navbar navbar-inverse" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->

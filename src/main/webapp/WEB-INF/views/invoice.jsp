@@ -20,7 +20,7 @@
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 <jsp:include page="header.jsp"></jsp:include>
 <body>
-
+<body background="${pageContext.request.contextPath}/resources/bg3.jpg">
 <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">

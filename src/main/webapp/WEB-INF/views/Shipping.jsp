@@ -18,6 +18,7 @@
 <h2><img src="resources/logo.jpg" class="img-rounded"  width="150" height="80"></h2> 
 <jsp:include page="header.jsp" /> 
 <body>
+<body background="${pageContext.request.contextPath}/resources/bg3.jpg">
 <div id="wrap">
 <div class="container clear-top">
 <c:if test="${not empty addressList}">
